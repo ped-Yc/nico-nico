@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -13,6 +16,8 @@
     "@vitejs/plugin-vue": "^2.0.0",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
+    "vitepress": "^1.0.0-alpha.45",
+    "vue": "^3.2.47",
     "vue-tsc": "^0.29.8"
   }
 }
