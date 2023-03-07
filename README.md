@@ -1,4 +1,5 @@
 # nico-nico 前端组件库
+[从 Element UI 源码的构建流程来看前端 UI 库设计](https://juejin.cn/post/6844904197863964685)
 
 ## 实现需求
 1. 拥有一整套脚手架工具
