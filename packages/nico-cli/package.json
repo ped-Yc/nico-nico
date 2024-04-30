@@ -1,0 +1,26 @@
+{
+  "name": "@nico-nico/nico-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "nico": "./bin/nico.js",
+    "nico-init": "./bin/index.js",
+    "nico-create": "./bin/nico-create.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@nico-nico/nico-cli": "link:",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.6",
+    "yargs": "^17.7.2"
+  }
+}

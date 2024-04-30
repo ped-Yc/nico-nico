@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": false,
+    "strict": true, //严格模式
+    "experimentalDecorators": true, //装饰器语法
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleDetection": "auto",
+    "removeComments": true, //删除注释
+    "types": [],
+    "paths": {
+      "@nico-nico/*": [
+        "packages/*"
+      ]
+    },
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ]
+}

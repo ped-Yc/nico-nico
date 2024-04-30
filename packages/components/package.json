@@ -1,0 +1,15 @@
+{
+  "name": "@nico/components",
+  "version": "1.0.0",
+  "description": "components here",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ped-yc",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "license": "ISC"
+}

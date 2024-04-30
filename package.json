@@ -1,23 +1,37 @@
 {
-  "name": "vite-project",
-  "version": "0.0.0",
+  "private": "true",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "cli:dev": "npm run build && npm run docs:dev",
+    "cli:build": "npm run build && npm run docs:build",
+    "cli:preview": "npm run build && npm run docs:preview"
   },
-  "dependencies": {
-    "vue": "^3.2.25"
+  "keywords": [
+    "nico",
+    "vue",
+    "framework"
+  ],
+  "author": "ped-yc",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.0.0",
-    "typescript": "^4.4.4",
-    "vite": "^2.7.2",
-    "vitepress": "^1.0.0-alpha.45",
-    "vue": "^3.2.47",
-    "vue-tsc": "^0.29.8"
+    "typescript": "^5.3.3",
+    "vitepress": "^1.1.4"
+  },
+  "workspaces": [
+    "packages/*",
+    "play",
+    "docs"
+  ],
+  "dependencies": {
+    "@nico-nico/nico-cli": "workspace:^",
+    "nico-nico": "link:",
+    "pnpm": "^9.0.6"
   }
 }

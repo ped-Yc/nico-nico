@@ -1,0 +1,15 @@
+{
+  "name": "nico-nico",
+  "version": "1.0.0",
+  "description": "a ped-yc's UI Library with vue3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue3",
+    "nico"
+  ],
+  "author": "ped-yc",
+  "license": "ISC"
+}
