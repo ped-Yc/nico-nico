@@ -22,3 +22,8 @@ yargs.command(
 ).argv;
 
 console.log("welcome to nico!");
+console.log('https://github.com/nico-cli/nico');
+
+console.log('nico-cli init')
+
+console.log('nico-cli create')

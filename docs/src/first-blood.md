@@ -1,4 +1,4 @@
-### first blood
+### First Blood
 
 #### 1. 创建一个项目
 

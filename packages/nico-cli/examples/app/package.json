@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. run `npm init`\r 2. change `dependencies` in package.json\r 3. run `npm i`",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "nico-cli": "workspace:*"
-  }
+  },
+  "devDependencies": {}
 }
+
+
+
+
+

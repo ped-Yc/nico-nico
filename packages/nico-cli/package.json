@@ -9,7 +9,14 @@
     "nico-create": "./bin/nico-create.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "nico dev docs",
+    "docs:build": "nico build docs",
+    "docs:serve": "nico serve docs",
+    "docs:div":"vitepress build docs",
+    "docs:preview":"vitepress preview docs",
+    "build": "npm run docs:build && npm run docs:div",
+    "serve": "npm run docs:serve"
   },
   "keywords": [],
   "author": "",

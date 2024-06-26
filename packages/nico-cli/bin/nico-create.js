@@ -10,5 +10,13 @@ console.log(
   require('../package.json').version +
   '.'
 );
+console.log();
+console.log(
+  `  ` +
+  chalk.bold.yellow('nico create') +
+  `is a Nico-Nico CLI` +
+  require('../package.json').version +
+  '.'
 
+);
 

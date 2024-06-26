@@ -21,6 +21,7 @@ const { theme, page, frontmatter } = useData()
 ### Theme Data
 <pre>{{ theme }}</pre>
 
+
 ### Page Data
 <pre>{{ page }}</pre>
 
@@ -50,3 +51,14 @@ const { site, theme, page, frontmatter } = useData()
 ## More
 
 Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+
+## Example
+```
+哥舒歌
+
+北斗七星高
+哥舒夜带刀
+至今窥牧马
+不敢过临洮
+```
+

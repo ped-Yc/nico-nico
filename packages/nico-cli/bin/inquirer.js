@@ -42,54 +42,87 @@ function inquirerPrompt(argv) {
         {
           type: '',
           message: '',
+
+
           choices: '',
           name: ''
         }
       ])
       .then((answers) => {
         const { frame } = answers;
-        if (frame === 'react') {
-          inquirer.prompt([
-            {
-              type: 'list',
-              message: '使用什么UI组件库开发',
-              choices: [
-                'Ant Design'
-              ],
-              name: 'library'
-            }
-          ]).then(answers1 => {
-            resolve({
-              ...answers,
-              ...answers1
+        //#region 根据框架选择不同的UI组件库
+        switch (frame) {
+          case 'react':
+            inquirer.prompt([
+              {
+                type: 'list',
+                message: '使用什么UI组件库开发',
+                choices: [
+                  'Ant Design'
+                ],
+                name: 'library'
+              }
+            ]).then(answers1 => {
+              resolve({
+                ...answers,
+                ...answers1
+              }).catch(err => {
+                reject(err)
+                console.log(err);
+              })
+            })
+            break;
+          case 'vue':
+            inquirer.prompt([
+              {
+                type: 'list',
+                message: '使用什么UI组件库开发',
+                choices: ['Element'],
+                name: 'library'
+              }
+            ]).then(answers2 => {
+              resolve({
+                ...answers,
+                ...answers2
+              })
             }).catch(err => {
               reject(err)
               console.log(err);
             })
-          })
-        }
-        if (frame === 'vue') {
-          inquirer.prompt([
-            {
-              type: 'list',
-              message: '使用什么UI组件库开发',
-              choices: ['Element'],
-              name: 'library'
-            }
-          ]).then(answers2 => {
-            resolve({
-              ...answers,
-              ...answers2
+            break;
+          case 'angular':
+            inquirer.prompt([{}]).then(answers3 => {
+              resolve({
+                ...answers,
+                ...answers3
+              })
             })
-          }).catch(err => {
-            reject(err)
-            console.log(err);
-          })
+            break;
+          case 'node':
+            inquirer.prompt([{}]).then(answers4 => {
+              resolve({
+                ...answers,
+                ...answers4
+              })
+            })
+            break;
+          case 'chrome':
+            inquirer.prompt([{}]).then(answers5 => {
+              resolve({
+                ...answers,
+                ...answers5
+              })
+            })
+            break;
+          default:
+            console.log('Unsupported frame');
+            reject(new Error('Unsupported frame'));
         }
+        //#endregion
       })
-      .catch((err) => { });
-  });
+  })
 }
+
 
 
 

@@ -80,6 +80,10 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+
+::: info
+哈哈哈哈好哈宋迪还哦对后
+:::
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

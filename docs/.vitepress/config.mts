@@ -5,6 +5,7 @@ export default defineConfig({
   title: "@nico-nico/docs",
   description: "A VitePress Site",
   srcDir: "src",
+  outDir: "../public",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
